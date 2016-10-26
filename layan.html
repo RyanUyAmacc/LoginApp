@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form name="login">
+<table width="100%">
+	<tr>
+		<td valign="top"> Username </td>
+		<td><input type="text" name="username" value="" /></td>
+	</tr>
+	<tr>
+		<td valign="top"> Password </td>
+		<td><input type="text" name="password" value="" /></td>
+	</tr>
+</table>
+	 <input type="button" onclick="check(this.form)" value="Login"/>
+</form>
+<script language="javascript">
+	function check(form)
+    {
+     	if(form.username.value == "username" && form.password.value == "password")
+    {
+        window.open('welcome.html')
+    }
+     	else
+    {
+       alert("Error Password or Username")
+    }
+    }
+ </script>
+</body>
+</html>
